@@ -11,4 +11,4 @@ WITH duplicate_emails_id AS (
 		)	
 )
 DELETE FROM Person 
-WHERE id IN (SELECT id FROM duplicate_emails_id WHERE row_num > 1)
+WHERE id IN (SELECT id FROM duplicate_emails_id WHERE row_num > 1);
